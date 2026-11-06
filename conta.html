@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Minha Conta - Tech Store</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-site">
+
+    <div class="topbar">
+        👤 Minha Conta
+    </div>
+
+    <header>
+        <div class="logosvg">
+            <a href="index.html" style="text-decoration:none;">
+                <svg width="180" height="50" viewBox="0 0 300 80">
+                    <text x="10" y="50" fill="black" font-size="32" font-weight="bold">TECH</text>
+                    <text x="120" y="50" fill="#ff6600" font-size="32" font-weight="bold">STORE</text>
+                    <line x1="10" y1="60" x2="260" y2="60" stroke="#ff6600" stroke-width="3"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main style="display:flex; justify-content:center; padding:60px 20px;">
+
+        <div style="background:white; padding:30px; border-radius:16px; width:350px; box-shadow:0 10px 25px rgba(0,0,0,0.08);">
+
+            <h2 style="margin-bottom:20px;">Acesse sua conta</h2>
+
+            <input id="nome" placeholder="Nome"
+                style="width:100%; padding:10px; margin-bottom:10px;">
+
+            <input id="email" placeholder="Email"
+                style="width:100%; padding:10px; margin-bottom:10px;">
+
+            <input id="senha" type="password" placeholder="Senha"
+                style="width:100%; padding:10px; margin-bottom:20px;">
+
+            <button onclick="cadastrar()"
+                style="width:100%; padding:12px; background:#ff6600; color:white; border:none; border-radius:10px; margin-bottom:10px;">
+                Cadastrar
+            </button>
+
+            <button onclick="login()"
+                style="width:100%; padding:12px; background:#111827; color:white; border:none; border-radius:10px;">
+                Login
+            </button>
+
+            <p id="status" style="margin-top:15px; font-size:14px;"></p>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="conta.js"></script>
+
+</body>
+</html>

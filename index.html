@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+    name="description"
+    content="Tech Store - Os melhores eletrônicos com até 50% OFF"
+>
+
+<meta name="theme-color" content="#ff6600">
+
+<title>TECH Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+>
+
+</head>
+<body>
+
+<div class="container-site">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        🔥 OFERTAS RELÂMPAGO • FRETE GRÁTIS ACIMA DE R$199 • APROVEITE
+    </div>
+
+    <!-- HEADER -->
+   <header>
+
+    <div class="logosvg">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+
+            <svg width="180" height="50" viewBox="0 0 300 80">
+
+                <text x="10" y="50" fill="black" font-size="32" font-weight="bold">
+                    TECH
+                </text>
+
+                <text x="120" y="50" fill="#ff6600" font-size="32" font-weight="bold">
+                    STORE
+                </text>
+
+                <line
+                    x1="10"
+                    y1="60"
+                    x2="260"
+                    y2="60"
+                    stroke="#ff6600"
+                    stroke-width="3"
+                />
+
+            </svg>
+
+        </a>
+
+        <!-- SEARCH -->
+        <form class="search-box">
+
+            <span class="search-icon">🔍</span>
+
+            <input
+                type="text"
+                placeholder="Buscar produtos..."
+                id="campo-busca"
+            >
+
+        </form>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="header-right">
+
+        <div class="header-links">
+
+           <a href="conta.html" id="user-area">Minha Conta</a>
+
+            <a href="#">Pedidos</a>
+            <button onclick="resetarSistema()">Resetar dados</button>
+
+        </div>
+
+        <!-- CARRINHO -->
+        <div class="cart-wrapper">
+
+            <button class="cart" id="abrir-carrinho">
+
+                🛒
+
+                <span id="contador">0</span>
+
+            </button>
+
+            <!-- MINI CARRINHO -->
+            <div class="mini-carrinho" id="mini-carrinho">
+
+                <h3>Seu carrinho</h3>
+
+                <div id="lista-carrinho"></div>
+
+                <h4 id="total-carrinho">
+                    Total: R$ 0,00
+                </h4>
+
+                <button id="fechar-carrinho" class="comprar">
+                    Fechar
+                </button>
+
+                <a href="carrinho.html" class="comprar">
+                    Ir para o carrinho
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+    <!-- NAV -->
+   <nav aria-label="Menu principal">
+
+    <a href="#">Home</a>
+
+    <a href="#">Ofertas</a>
+
+    <a href="#">Categorias</a>
+
+    <a href="#">Contato</a>
+
+</nav>
+
+    <!-- HERO -->
+   <section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            🔥 Ofertas da semana
+        </span>
+
+        <h1>
+            Promoções Imperdíveis
+        </h1>
+
+        <p>
+            Os melhores eletrônicos com até 50% OFF
+        </p>
+
+        <a href="#produtos" class="hero-btn">
+            Ver Ofertas
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- CATEGORIAS -->
+    <section class="categorias">
+
+        <a href="#">💻 PCs</a>
+        <a href="#">📱 Smartphones</a>
+        <a href="#">🎧 Áudio</a>
+        <a href="#">🎮 Gamer</a>
+
+    </section>
+
+    <!-- PRODUTOS -->
+   <section class="produtos" id="produtos">
+
+        <h2 class="section-title">Produtos em destaque</h2>
+
+        <!-- PRODUTO 1 -->
+        <article class="produto" onclick="window.location.href='produto.html?id=pc-gamer'">
+
+    <span class="desconto">-20%</span>
+
+    <img src="img/pc.webp" alt="PC Gamer RGB" loading="lazy">
+
+    <h3>PC Gamer RGB</h3>
+
+    <div class="rating">⭐⭐⭐⭐☆</div>
+
+    <p class="frete">🚚 Entrega rápida</p>
+
+    <p class="preco">R$ 5.999</p>
+
+    <button class="comprar"onclick="event.stopPropagation()">
+        Adicionar ao carrinho
+    </button>
+    <button class="comprar-agora" onclick="event.stopPropagation()">
+    Comprar agora
+</button>
+
+</article>
+        </a>
+
+        <!-- PRODUTO 2 -->
+       
+    <!-- RASCUNHOS-->
+     <article class="produto" onclick="window.location.href='produto.html?id=notebook'">
+
+    <span class="desconto">-20%</span>
+
+    <img src="img/not.webp" alt="Notebook Gamer" loading="lazy">
+
+    <h3>Notebook Gamer</h3>
+
+    <div class="rating">⭐⭐⭐⭐☆</div>
+
+    <p class="frete">🚚 Entrega rápida</p>
+
+    
+            <p class="preco">R$ 4.500</p>
+
+    <button class="comprar">
+        Adicionar ao carrinho
+    </button>
+    <button class="comprar-agora"  onclick="event.stopPropagation()">
+    Comprar agora
+</button>
+
+</article>
+
+        <!-- PRODUTO 3 -->
+       
+    <!-- RASCUNHOS-->
+     <article class="produto" onclick="window.location.href='produto.html?id=smartphone'">
+
+    <span class="desconto">-20%</span>
+
+    <img src="img/cel.webp" alt="Smartphone Pro" loading="lazy">
+
+    <h3>Smartphone Pro</h3>
+
+    <div class="rating">⭐⭐⭐⭐☆</div>
+
+    <p class="frete">🚚 Entrega rápida</p>
+
+    
+            <p class="preco">R$ 2.199</p>
+
+    <button class="comprar">
+        Adicionar ao carrinho
+    </button>
+    <button class="comprar-agora"  onclick="event.stopPropagation()">
+    Comprar agora
+</button>
+
+</article>
+
+        <!-- PRODUTO 4 -->
+        
+
+        <article class="produto" onclick="window.location.href='produto.html?id=fone'">
+
+            <span class="desconto">-20%</span>
+
+            <img src="img/fone.webp" alt="Fone Bluetooth" loading="lazy">
+
+            <h3>Fone Bluetooth</h3>
+
+            <div class="rating">⭐⭐⭐⭐☆ <span>(124)</span></div>
+
+            <p class="frete">🚚 Entrega rápida</p>
+
+            <p class="preco">R$ 299</p>
+
+            <button class="comprar" onclick="event.stopPropagation()">
+                Adicionar ao carrinho
+            </button>
+            <button class="comprar-agora" onclick="event.stopPropagation()">
+    Comprar agora
+</button>
+
+        </article>
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Tech Store - Todos os direitos reservados</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

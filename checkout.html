@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - Tech Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container-site">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        🔒 Ambiente Seguro
+    </div>
+
+    <!-- HEADER -->
+    <header class="checkout-header">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+
+            <svg width="180" height="50" viewBox="0 0 300 80">
+
+                <text x="10" y="50" fill="black" font-size="32" font-weight="bold">
+                    TECH
+                </text>
+
+                <text x="120" y="50" fill="#ff6600" font-size="32" font-weight="bold">
+                    STORE
+                </text>
+
+                <line
+                    x1="10"
+                    y1="60"
+                    x2="260"
+                    y2="60"
+                    stroke="#ff6600"
+                    stroke-width="3"
+                />
+
+            </svg>
+
+        </a>
+
+        <!-- VOLTAR -->
+        <a href="index.html" class="voltar-loja">
+            ← Voltar à loja
+        </a>
+
+    </header>
+
+    <!-- CHECKOUT -->
+    <main class="checkout-container">
+
+        <!-- RESUMO -->
+        <section class="checkout-resumo">
+
+            <h2>Resumo do Pedido</h2>
+
+            <div id="checkout-produtos"></div>
+
+            <div class="checkout-total">
+                <span>Total:</span>
+                <strong id="checkout-total">
+                    R$ 0,00
+                </strong>
+            </div>
+
+        </section>
+
+        <!-- PAGAMENTO -->
+        <section class="checkout-pagamento">
+
+            <h2>Pagamento</h2>
+
+            <div class="metodos">
+
+                <label class="metodo">
+                    <input type="radio" name="pagamento" checked>
+                    PIX
+                </label>
+
+                <label class="metodo">
+                    <input type="radio" name="pagamento">
+                    Cartão
+                </label>
+
+                <label class="metodo">
+                    <input type="radio" name="pagamento">
+                    Boleto
+                </label>
+
+            </div>
+
+            <button id="finalizar-pagamento">
+                Finalizar Compra
+            </button>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

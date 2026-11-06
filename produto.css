@@ -1,0 +1,266 @@
+
+/* =========================
+   BASE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #111827;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container-site {
+    width: 100%;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.header-right .cart {
+    background: linear-gradient(135deg, #ff6600, #ff8a00);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 0 8px 18px rgba(255,102,0,0.25);
+}
+
+.header-right .cart:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   PRODUTO LAYOUT
+========================= */
+
+.produto-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    padding: 50px 6%;
+    align-items: start;
+}
+
+/* =========================
+   CARD GERAL
+========================= */
+
+.produto-galeria,
+.produto-info {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    padding: 25px;
+}
+
+/* =========================
+   GALERIA
+========================= */
+
+.img-principal {
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.img-principal:hover {
+    transform: scale(1.08);
+}
+.miniaturas {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.miniaturas img {
+    width: 75px;
+    height: 75px;
+    border-radius: 12px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.miniaturas img:hover {
+    transform: scale(1.08);
+    border-color: #ff6600;
+}
+
+.miniaturas img.ativo {
+    border: 2px solid #ff6600;
+    box-shadow: 0 0 10px rgba(255,102,0,0.3);
+}
+
+.miniaturas img:hover {
+    border-color: #ff6600;
+    transform: scale(1.08);
+}
+
+.miniaturas img.ativo {
+    border-color: #ff6600;
+}
+
+/* =========================
+   INFO PRODUTO
+========================= */
+
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.produto-info h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.preco-produto {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ff6600;
+    letter-spacing: -1px;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-comprar {
+    background: linear-gradient(135deg, #ff6600, #ff8a00);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: 0 10px 20px rgba(255,102,0,0.25);
+}
+
+.btn-comprar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(255,102,0,0.35);
+}
+
+.btn-buy-now {
+    background: #111827;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-buy-now:hover {
+    background: #1e293b;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.descricao-produto {
+    line-height: 1.7;
+    font-size: 15px;
+    color: #374151;
+}
+
+.descricao-produto h3 {
+    color: #ff6600;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.descricao-produto ul {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.descricao-produto li {
+    margin-bottom: 6px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+    .produto-container {
+        grid-template-columns: 1fr;
+        padding: 30px 5%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .preco-produto {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carrinho - Tech Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-site">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        🛒 Seu carrinho de compras
+    </div>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logosvg">
+
+            <a href="index.html" style="text-decoration:none;">
+                <svg width="180" height="50" viewBox="0 0 300 80">
+                    <text x="10" y="50" fill="black" font-size="32" font-weight="bold">TECH</text>
+                    <text x="120" y="50" fill="#ff6600" font-size="32" font-weight="bold">STORE</text>
+                    <line x1="10" y1="60" x2="260" y2="60" stroke="#ff6600" stroke-width="3"/>
+                </svg>
+            </a>
+
+        </div>
+
+        <div class="header-right">
+            <a href="index.html" class="cart" style="text-decoration:none;">
+                ← Continuar comprando
+            </a>
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main style="padding:40px 5%; display:grid; grid-template-columns:2fr 1fr; gap:30px;">
+
+        <!-- LISTA DE PRODUTOS -->
+        <section style="background:white; padding:25px; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,0.08);">
+
+            <h2 style="margin-bottom:20px; color:#111827;">Itens do carrinho</h2>
+
+            <!-- JS vai inserir os produtos aqui -->
+            <div id="cart-items-container"></div>
+
+        </section>
+
+        <!-- RESUMO -->
+        <aside style="background:white; padding:25px; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,0.08); height:fit-content;">
+
+            <h2 style="margin-bottom:20px; color:#111827;">Resumo do pedido</h2>
+
+            <p style="display:flex; justify-content:space-between; margin-bottom:10px;">
+                <span>Frete</span>
+                <strong style="color:green;">Grátis</strong>
+            </p>
+
+            <hr style="margin:15px 0;">
+
+            <p style="display:flex; justify-content:space-between; font-size:18px; font-weight:700;">
+                <span>Total</span>
+                <span id="total-final" style="color:#ff6600;">R$ 0,00</span>
+            </p>
+
+           <button class="checkout-btn" id="finalizar-compra">
+    Finalizar compra
+</button>
+        </aside>
+
+    </main>
+
+</div>
+
+<!-- JS SEPARADO -->
+<script src="script.js"></script>
+
+</body>
+</html>

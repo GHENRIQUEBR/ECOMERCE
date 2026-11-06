@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produto - Tech Store</title>
+
+<link rel="stylesheet" href="produto.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-site">
+
+    <div class="topbar">🔥 Detalhes do Produto</div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logosvg">
+            <a href="index.html">
+               <svg width="180" height="50" viewBox="0 0 300 80">
+
+                <text x="10" y="50" fill="black" font-size="32" font-weight="bold">
+                    TECH
+                </text>
+
+                <text x="120" y="50" fill="#ff6600" font-size="32" font-weight="bold">
+                    STORE
+                </text>
+
+                <line
+                    x1="10"
+                    y1="60"
+                    x2="260"
+                    y2="60"
+                    stroke="#ff6600"
+                    stroke-width="3"
+                />
+
+            </svg>
+        </div>
+
+        <div class="header-right">
+            <a href="carrinho.html" class="cart">🛒 Carrinho</a>
+        </div>
+    </header>
+
+    <!-- PRODUTO -->
+   <main class="produto-container">
+
+    <!-- GALERIA -->
+    <section class="produto-galeria">
+
+        <img id="img-principal" class="img-principal" src="">
+
+        <div id="miniaturas" class="miniaturas"></div>
+
+    </section>
+
+    <!-- INFO -->
+    <section class="produto-info">
+        <span class="badge">🔥 Mais vendido</span>
+
+        <h1 id="nome-produto">Produto</h1>
+
+        <p id="preco-produto" class="preco-produto">R$ 0,00</p>
+
+        <div class="botoes-produto">
+
+            <button id="btn-comprar"
+                class="btn-comprar">
+                🛒 Adicionar ao carrinho
+            </button>
+
+            <button id="btn-comprar-agora"
+                class="btn-buy-now">
+                ⚡ Comprar agora
+            </button>
+
+        </div>
+
+        <hr>
+
+        <div id="descricao-produto" class="descricao-produto"></div>
+
+    </section>
+
+</main>
+
+</div>
+
+<script src="produto.js"></script>
+
+</body>
+</html>

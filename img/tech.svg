@@ -1,0 +1,19 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text-main {
+      font: bold 32px Arial, sans-serif;
+      fill: #ffffff;
+    }
+    .text-accent {
+      font: bold 32px Arial, sans-serif;
+      fill: #ff6600;
+    }
+  </style>
+
+  <rect width="300" height="80" rx="10" fill="#0d0d0d"/>
+
+  <text x="20" y="50" class="text-main">TECH</text>
+  <text x="120" y="50" class="text-accent">STORE</text>
+
+  <line x1="20" y1="60" x2="260" y2="60" stroke="#ff6600" stroke-width="3"/>
+</svg>
